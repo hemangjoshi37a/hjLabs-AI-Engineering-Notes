@@ -26,7 +26,7 @@ layout: default
       <p>Five deep-dives on agent deployment, RAG systems, framework choice, and enterprise AI governance.</p>
     </div>
     <div class="article-grid">
-      {% assign articles = site.pages | where_exp: "p", "p.layout == 'article'" | sort: "order" %}
+      {% assign articles = site.pages | where_exp: "p", "p.order" | sort: "order" %}
       {% for article in articles %}
         <a href="{{ site.baseurl }}{{ article.url }}" class="article-card">
           {% if article.cover %}
