@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: hjLabs.in Engineering Notes
+description: Field notes from deploying production AI systems for enterprise teams
+show_downloads: false
+google_analytics:
+plugins:
+  - jemoji
