@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<article class="article">
+  {% if page.cover %}
+  <div class="article-hero">
+    <img src="{{ site.baseurl }}{{ page.cover }}" alt="{{ page.title }}" class="article-hero-img">
+  </div>
+  {% endif %}
+
+  <div class="container article-container">
+    <header class="article-header">
+      <a href="{{ site.baseurl }}/" class="article-backlink">← All articles</a>
+      <h1 class="article-title">{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="article-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <div class="article-meta">
+        <div class="article-author">
+          <div class="author-avatar">{{ site.author.name | slice: 0, 1 }}</div>
+          <div class="author-info">
+            <span class="author-name">{{ site.author.name }}</span>
+            <span class="author-role">Founder · hjLabs.in</span>
+          </div>
+        </div>
+        {% if page.reading_time %}<span class="meta-dot">·</span><span>⏱ {{ page.reading_time }}</span>{% endif %}
+        {% if page.tags %}<span class="meta-dot">·</span><span class="article-tags">{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</span>{% endif %}
+      </div>
+    </header>
+
+    <div class="article-body prose">
+      {{ content }}
+    </div>
+
+    <footer class="article-footer">
+      <div class="article-share">
+        <span class="share-label">Share this article:</span>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener">Twitter/X</a>
+        <a href="mailto:?subject={{ page.title | url_encode }}&body={{ site.url }}{{ site.baseurl }}{{ page.url }}">Email</a>
+      </div>
+
+      <div class="article-author-bio">
+        <div class="author-avatar-lg">{{ site.author.name | slice: 0, 1 }}</div>
+        <div>
+          <h4>{{ site.author.name }}</h4>
+          <p>Founder at hjLabs.in — an AI/ML consultancy building production agentic systems for enterprises in the US, UK, and Gulf markets. Ten years shipping ML systems that have to survive Monday morning.</p>
+          <div class="author-links">
+            <a href="https://hjlabs.in/" target="_blank" rel="noopener">hjlabs.in</a>
+            <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="{{ site.cta.book_url }}" target="_blank" rel="noopener">Book a call</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</article>
+
+{% include cta-book-call.html %}

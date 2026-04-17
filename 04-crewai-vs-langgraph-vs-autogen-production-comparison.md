@@ -1,4 +1,14 @@
-# CrewAI vs LangGraph vs AutoGen: Which Framework for Production AI Agents?
+---
+layout: article
+title: "CrewAI vs LangGraph vs AutoGen: Which Framework for Production AI Agents?"
+subtitle: "Honest comparison of the three leading agent frameworks based on production experience with all three."
+description: "A production-focused comparison of CrewAI, LangGraph, and AutoGen: abstractions, strengths, weaknesses, decision matrix, and our rule of thumb after shipping on all three."
+cover: /assets/images/04-cover.png
+reading_time: "11 min read"
+tags: [agentic-ai, langgraph, crewai, autogen]
+order: 4
+canonical: "https://www.linkedin.com/pulse/crewai-vs-langgraph-autogen-which-framework-production-joshi/"
+---
 
 We've shipped production agents on all three frameworks in the last 18 months. Here's the honest comparison most tutorials won't give you.
 

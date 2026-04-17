@@ -1,4 +1,14 @@
-# How CibrAI Automated 80% of Their Security Analyst Workflow With Agentic AI
+---
+layout: article
+title: "How CibrAI Automated 80% of Their Security Analyst Workflow With Agentic AI"
+subtitle: "A case study in building pragmatic agent systems for cybersecurity operations."
+description: "How a two-phase agentic AI build freed the CibrAI security team from tier-1 triage drudgery, sharpened their MTTR on real incidents, and gave their senior analysts their weekends back."
+cover: /assets/images/03-cover.png
+reading_time: "9 min read"
+tags: [agentic-ai, cybersecurity, case-study]
+order: 3
+canonical: "https://www.linkedin.com/pulse/how-cibrai-automated-80-their-security-analyst-workflow-joshi/"
+---
 
 *A case study in building pragmatic agent systems for cybersecurity operations — written for CISOs and security leaders who are tired of throwing more headcount at alert fatigue.*
 

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow">Enterprise AI Engineering Notes</div>
+    <h1 class="hero-title">Production AI systems that survive Monday morning.</h1>
+    <p class="hero-subtitle">Field notes from deploying LLM agents, RAG systems, and evaluation harnesses for enterprise teams. Written for CTOs and senior engineers who are past the demo phase and shipping real systems.</p>
+    <div class="hero-actions">
+      <a href="{{ site.cta.book_url }}" class="btn btn-primary" target="_blank" rel="noopener">📅 Book a Strategy Call</a>
+      <a href="#articles" class="btn btn-ghost">Read the articles ↓</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">SOC 2 Aware</span>
+      <span class="badge">Enterprise-Grade</span>
+      <span class="badge">12+ Countries</span>
+      <span class="badge">Production Focus</span>
+    </div>
+  </div>
+</section>
+
+<section id="articles" class="articles-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+      <p>Five deep-dives on agent deployment, RAG systems, framework choice, and enterprise AI governance.</p>
+    </div>
+    <div class="article-grid">
+      {% assign articles = site.pages | where_exp: "p", "p.layout == 'article'" | sort: "order" %}
+      {% for article in articles %}
+        <a href="{{ site.baseurl }}{{ article.url }}" class="article-card">
+          {% if article.cover %}
+            <div class="article-card-cover">
+              <img src="{{ site.baseurl }}{{ article.cover }}" alt="{{ article.title }}" loading="lazy">
+            </div>
+          {% endif %}
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              {% if article.reading_time %}<span>⏱ {{ article.reading_time }}</span>{% endif %}
+              {% if article.tags %}<span>· {{ article.tags | join: ' · ' }}</span>{% endif %}
+            </div>
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.description }}</p>
+            <span class="article-card-read">Read article →</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include cta-book-call.html %}
+
+<section class="content-section">
+  <div class="container prose">
+    {{ content }}
+  </div>
+</section>

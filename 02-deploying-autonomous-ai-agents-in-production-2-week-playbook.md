@@ -1,4 +1,14 @@
-# Deploying Autonomous AI Agents in Production: A 2-Week Playbook
+---
+layout: article
+title: "Deploying Autonomous AI Agents in Production: A 2-Week Playbook"
+subtitle: "Most teams quote 3-6 months to deploy production AI agents. We've done it in 2 weeks. The exact 14-day playbook."
+description: "A day-by-day playbook for deploying production AI agents in 2 weeks: scoping, framework choice (CrewAI vs LangGraph vs AutoGen), RAG tuning, evaluation harness, and production hardening."
+cover: /assets/images/02-cover.png
+reading_time: "12 min read"
+tags: [agentic-ai, langgraph, crewai, production-ai]
+order: 2
+canonical: "https://www.linkedin.com/pulse/deploying-autonomous-ai-agents-production-2-week-playbook-joshi-u7jxc/"
+---
 
 Most teams quote 3-6 months to deploy production AI agents. We've done it in 2 weeks. Repeatedly. Not demos. Not hackathon toys. Agents that handle real tickets, call real tools, pass real evals, and don't set the observability dashboard on fire at 2 AM.
 

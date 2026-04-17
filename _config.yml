@@ -1,7 +1,58 @@
-theme: jekyll-theme-cayman
-title: hjLabs.in Engineering Notes
-description: Field notes from deploying production AI systems for enterprise teams
-show_downloads: false
-google_analytics:
+title: "hjLabs.in · AI Engineering Notes"
+description: "Field notes from deploying production AI systems — LLM agents, RAG, evaluation harnesses, observability. Written for enterprise CTOs and senior engineers."
+url: "https://hemangjoshi37a.github.io"
+baseurl: "/hjLabs-AI-Engineering-Notes"
+author:
+  name: "Hemang Joshi"
+  email: "support@hjlabs.in"
+  url: "https://hjlabs.in/"
+  linkedin: "https://www.linkedin.com/in/hemang-joshi-046746aa/"
+
+# Homepage CTA
+cta:
+  book_url: "https://cal.com/hemangjoshi37a"
+  services_url: "https://hjlabs.in/AIML/services/agentic-ai/"
+  company_url: "https://hjlabs.in/"
+
+# Cross-platform links
+cross_posts:
+  linkedin: "https://www.linkedin.com/in/hemang-joshi-046746aa/recent-activity/articles/"
+  medium: "https://medium.com/@hemangjoshi37a"
+  devto: "https://dev.to/hemangjoshi37a"
+  hashnode: "https://hjlabs.hashnode.dev"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+  toc_levels: 2..3
+
+permalink: /:title/
+
+# Collections
+collections:
+  articles:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "article"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - node_modules
+
 plugins:
-  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

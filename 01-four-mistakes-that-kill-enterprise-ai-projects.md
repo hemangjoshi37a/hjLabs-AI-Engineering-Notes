@@ -1,6 +1,15 @@
-# The 4 Mistakes That Kill 80% of Enterprise AI Projects
+---
+layout: article
+title: "The 4 Mistakes That Kill 80% of Enterprise AI Projects"
+subtitle: "What three years of auditing enterprise LLM deployments taught me about why most of them fail before they ship — and how to reverse the damage."
+description: "80% of enterprise AI projects fail by month 3 — not from model limitations, but from four specific mistakes around scoping, orchestration, evaluation, and observability. Here's the audit checklist and the fixes."
+cover: /assets/images/01-cover.png
+reading_time: "10 min read"
+tags: [enterprise-ai, llm, agentic-ai]
+order: 1
+canonical: "https://www.linkedin.com/pulse/4-mistakes-kill-80-enterprise-ai-projects-hemang-joshi-zirsc/"
+---
 
-## What three years of auditing enterprise LLM deployments taught me about why most of them fail before they ship — and how to reverse the damage.
 
 I've audited more than 40 enterprise AI projects over the past three years. Fortune 500 banks. Mid-market logistics firms. Insurance carriers with billion-dollar loss ratios. A few well-funded scale-ups trying to retrofit agents onto a legacy monolith.
 
@@ -87,4 +96,3 @@ If your team is mid-deployment and any of these four mistakes feel uncomfortably
 The teams that ship production AI in 2026 aren't the ones with the biggest budgets or the fanciest models. They're the ones that avoid these four mistakes — or catch them early enough to reverse.
 
 ---
-HASHTAGS: #EnterpriseAI #GenAI #LLM #MachineLearning #AIStrategy #CTO #RAG #LangGraph #CrewAI #AIEngineering #MLOps #AIGovernance #AgenticAI #AIProductivity #TechLeadership

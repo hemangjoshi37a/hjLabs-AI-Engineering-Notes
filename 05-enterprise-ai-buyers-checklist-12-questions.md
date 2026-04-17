@@ -1,4 +1,14 @@
-# The Enterprise AI Buyer's Checklist: 12 Questions to Ask Before Hiring an AI Consultancy
+---
+layout: article
+title: "The Enterprise AI Buyer's Checklist: 12 Questions to Ask Before Hiring an AI Consultancy"
+subtitle: "Four groups of three questions: Delivery Proof, Technical Depth, Engineering Practices, Business Fit."
+description: "The checklist I wish every CTO and VP of Engineering had before signing an AI consulting SOW. Each question with why it matters, green-flag answer, and red-flag answer."
+cover: /assets/images/05-cover.png
+reading_time: "10 min read"
+tags: [enterprise-ai, ai-consulting, procurement]
+order: 5
+canonical: "https://www.linkedin.com/pulse/enterprise-ai-buyers-checklist-12-questions-ask-hiring-joshi/"
+---
 
 After auditing dozens of failed AI consulting engagements, I've noticed buyers keep asking the wrong questions. "Do you have AI expertise?" "Can you build an LLM app?" "What's your day rate?" These questions filter nothing. Every consultancy on Earth answers yes, yes, and a reasonable number. Six months later, the buyer has a stalled proof-of-concept, a burned budget, and an internal team that trusts "AI vendors" a little less than they did before.
 
